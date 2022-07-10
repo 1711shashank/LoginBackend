@@ -14,6 +14,8 @@ const middleware = async (req,res,next) => {
             res.userData = userData;
             res.userID = userData._id;
 
+            // console.log(jwtToken, userData);
+
             next();
         }
         else{

@@ -95,6 +95,7 @@ authRouter.get('/about', middleware, async (req, res) => {
     try {
         console.log('About page');
         
+        // console.log(res.userData);
         res.status(200).json({
             userData: res.userData,
             statusCode: 200
