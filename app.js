@@ -12,7 +12,7 @@ const app = express();
 // app.options( "*", cors({ origin: true, optionsSuccessStatus: 200, credentials: true }) );
 app.use(express.json(), cookieParser());
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT);
 
 const authRouter = require('./controller/authController');
